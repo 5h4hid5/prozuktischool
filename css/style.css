@@ -25,12 +25,6 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
-  font-family: "Charukola Unicode", sans-serif;
-  font-weight: 400;
-}
-
 /*--- header ---*/
 .mdl-layout__header {
   box-shadow: none;
@@ -47,6 +41,12 @@ h4, h5, h6 {
   min-height: 50vh;
   color: #fff;
   text-align: center;
+}
+
+.header h1, .header h2, .header h3,
+.header h4, .header h5, .header h6 {
+  font-family: "Charukola Unicode", sans-serif;
+  font-weight: 400;
 }
 
 .header a {
@@ -68,7 +68,7 @@ h4, h5, h6 {
 
 .sectionHeader h4 {
   margin: 0;
-  padding: 11px 0 10px 0;
+  padding: 8px 0;
   background: #fff;
 }
 
@@ -98,6 +98,79 @@ h4, h5, h6 {
   width: 100%;
   height: auto;
   border: 1px solid #ccc;
+}
+
+.postContainer {
+  min-height: 500px;
+}
+
+.postContainer .postMeta .postTitle {
+  color: #2296f3;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.postContainer .postMeta .postTitle span {
+  background: #fff;
+  padding: 0;
+  margin: 0 0.1em;
+  color: #3c3741;
+}
+
+.postContainer .postMeta .postTitle a {
+  font-size: 0.6em;
+}
+
+.postContainer .postBody {
+  min-height: 250px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 16px;
+  text-align: justify;
+}
+
+.postContainer .postBody p {
+  font-size: 1.4em;
+  line-height: 1.7em;
+  margin-bottom: 1em;
+}
+
+.postContainer .postBody p:last-child {
+  margin-bottom: 0;
+}
+
+.postContainer .postBody h4 {
+  color: #1DABB8;
+}
+
+.sidebarContainer {
+  min-height: 250px;
+}
+
+.sidebarContainer .sidebarWidget {
+  background: #fff;
+  min-height: 150px;
+  margin-bottom: 16px;
+}
+
+.sidebarContainer .sidebarWidget .widgetTitle {
+  background: #2296f3;
+  color: #fff;
+}
+
+.sidebarContainer .sidebarWidget .widgetTitle h4 {
+  margin: 0;
+  padding: 0.4em 0.3em;
+  text-align: center;
+}
+
+.sidebarContainer .sidebarWidget .widgetContent {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.sidebarContainer .sidebarWidget:last-child {
+  margin-bottom: 0;
 }
 
 .footer {

@@ -34,17 +34,18 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3,
-h4,h5,h6 {
-  font-family: $charukola;
-  font-weight: 400;
-}
-
 /*--- header ---*/
 .mdl-layout__header {
   box-shadow: none;
 }
 .header {
+
+  h1, h2, h3,
+  h4,h5,h6 {
+    font-family: $charukola;
+    font-weight: 400;
+  }
+
   background: $shipGrey;
   background-image: url(../img/bg.jpg);
   background-position: center center;
@@ -72,7 +73,7 @@ h4,h5,h6 {
   border: 1px solid #ccc;
   h4 {
     margin: 0;
-    padding: 11px 0 10px 0;
+    padding: 8px 0;
     background: $white;
     span {
       background: $blue;
@@ -101,6 +102,71 @@ h4,h5,h6 {
     width: 100%;
     height: auto;
     border: 1px solid #ccc;
+  }
+}
+
+.postContainer {
+  min-height: 500px;
+  .postMeta  {
+    .postTitle {
+      color: $blue;
+      text-align: center;
+      margin-bottom: 16px;
+      span {
+        background: $white;
+        padding: 0;
+        margin: 0 0.1em;
+        color: $shipGrey;
+      }
+      a {
+        font-size: 0.6em;
+      }
+    }
+  }
+
+  .postBody {
+    min-height: 250px;
+    background: $white;
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-align: justify;
+    p {
+      font-size: 1.4em;
+      line-height: 1.7em;
+      margin-bottom: 1em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    h4 {
+      color: #1DABB8;
+    }
+  }
+
+}
+
+.sidebarContainer {
+  min-height: 250px;
+  .sidebarWidget {
+    background: $white;
+    min-height: 150px;
+    margin-bottom: 16px;
+    .widgetTitle {
+      background: $blue;
+      color: $white;
+      h4 {
+        margin: 0;
+        padding: 0.4em 0.3em;
+        text-align: center;
+      }
+    }
+    .widgetContent {
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+  }
+  .sidebarWidget:last-child {
+    margin-bottom: 0;
   }
 }
 
