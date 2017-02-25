@@ -125,7 +125,6 @@ a {
   }
 
   .postBody {
-    min-height: 250px;
     background: $white;
     border: 1px solid #ccc;
     padding: 16px;
@@ -146,10 +145,8 @@ a {
 }
 
 .sidebarContainer {
-  min-height: 250px;
   .sidebarWidget {
     background: $white;
-    min-height: 150px;
     margin-bottom: 16px;
     .widgetTitle {
       background: $blue;
@@ -167,6 +164,39 @@ a {
   }
   .sidebarWidget:last-child {
     margin-bottom: 0;
+  }
+}
+
+.socialLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0.5em 0;
+  text-align: center;
+  li {
+    text-align: center;
+    display: inline-block;
+    margin-right: 1em;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.archive {
+  list-style: none;
+  padding: 8px;
+  li {
+    margin-bottom: 16px;
+    text-align: left;
+    .fa {
+      margin-right: .7em;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

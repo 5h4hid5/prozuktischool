@@ -122,7 +122,6 @@ a {
 }
 
 .postContainer .postBody {
-  min-height: 250px;
   background: #fff;
   border: 1px solid #ccc;
   padding: 16px;
@@ -143,13 +142,8 @@ a {
   color: #1DABB8;
 }
 
-.sidebarContainer {
-  min-height: 250px;
-}
-
 .sidebarContainer .sidebarWidget {
   background: #fff;
-  min-height: 150px;
   margin-bottom: 16px;
 }
 
@@ -170,6 +164,45 @@ a {
 }
 
 .sidebarContainer .sidebarWidget:last-child {
+  margin-bottom: 0;
+}
+
+.socialLinks {
+  list-style: none;
+  margin: 0;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.socialLinks li {
+  text-align: center;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.socialLinks li:last-child {
+  margin-right: 0;
+}
+
+.socialLinks li a {
+  font-size: 1.5em;
+}
+
+.archive {
+  list-style: none;
+  padding: 8px;
+}
+
+.archive li {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.archive li .fa {
+  margin-right: .7em;
+}
+
+.archive li:last-child {
   margin-bottom: 0;
 }
 
