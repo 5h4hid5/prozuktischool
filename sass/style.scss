@@ -1,0 +1,105 @@
+@import url('https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/solaimanlipi/stylesheet.css');
+@import url('https://cdn.rawgit.com/musafirshahid/bangla-web-fonts/charukola-reguler-unicode/stylesheet.css');
+
+/*--- variables ---*/
+$solaimanlipi: 'SolaimanLipi', sans-serif;
+$charukola: 'Charukola Unicode', sans-serif;
+$white: #fff;
+$mercury: #e7e7e7;
+$shipGrey: #3c3741;
+$urlColor: rgb(255,82,82);
+$blue: #2296f3;
+
+/*--- common ---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+body {
+  font-family: $solaimanlipi;
+  font-size: 14px;
+  background: $mercury;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3,
+h4,h5,h6 {
+  font-family: $charukola;
+  font-weight: 400;
+}
+
+/*--- header ---*/
+.mdl-layout__header {
+  box-shadow: none;
+}
+.header {
+  background: $shipGrey;
+  background-image: url(../img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+  min-height: 50vh;
+  color: $white;
+  text-align: center;
+  a {
+    color: $white;
+    &:hover {
+      color: $urlColor;
+    }
+  }
+}
+
+.mdl-layout__header .mdl-layout__drawer-button {
+  background: none;
+}
+
+.sectionHeader {
+  color: $white;
+  border: 1px solid #ccc;
+  h4 {
+    margin: 0;
+    padding: 11px 0 10px 0;
+    background: $white;
+    span {
+      background: $blue;
+      padding: 8px 1em;
+    }
+  }
+}
+
+.courseContainer{
+  min-height: 300px;
+  background: $white;
+  text-align: center;
+  border: 1px solid #ccc;
+  a {
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    svg {
+      width: 120px;
+    }
+  }
+}
+
+.postSummery {
+  .mdl-card {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+}
