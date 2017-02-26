@@ -110,15 +110,42 @@ a {
   margin-bottom: 16px;
 }
 
-.postContainer .postMeta .postTitle span {
+.postContainer .postMeta .postInfo {
   background: #fff;
-  padding: 0;
-  margin: 0 0.1em;
-  color: #3c3741;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  text-align: center;
+  padding: 8px;
 }
 
-.postContainer .postMeta .postTitle a {
-  font-size: 0.6em;
+.postContainer .postMeta .postInfo p {
+  display: inline;
+  margin: 0;
+  padding: 8px;
+  padding-right: 0;
+}
+
+.postContainer .postMeta .postInfo .devider {
+  margin: 0 .3em;
+}
+
+.postContainer .postMeta .postInfo .postTags {
+  list-style: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.postContainer .postMeta .postInfo .postTags li {
+  display: inline;
+}
+
+.postContainer .postMeta .postInfo .postTags li::after {
+  content: ',';
+}
+
+.postContainer .postMeta .postInfo .postTags li:last-child::after {
+  content: '';
 }
 
 .postContainer .postBody {
@@ -140,6 +167,20 @@ a {
 
 .postContainer .postBody h4 {
   color: #1DABB8;
+}
+
+.postShare {
+  margin-top: 16px;
+  background: #fff;
+  padding: 8px 4px;
+}
+
+.postShare .rrssb-buttons li {
+  padding: 0 4px;
+}
+
+.postShare .rrssb-buttons li a {
+  border-radius: 0;
 }
 
 .sidebarContainer .sidebarWidget {
